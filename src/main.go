@@ -15,7 +15,14 @@ func init() {
 }
 
 func main() {
-	os.Getenv("APP_ID")
+	ginMode := os.Getenv("GIN_MODE")
+	if ginMode == "" {
+		ginMode = gin.ReleaseMode
+	}
+
+	// fmt.Println("ginMode:", ginMode)
+
+	gin.SetMode(ginMode)
 
 	// 创建一个服务
 	server := gin.Default()
@@ -52,7 +59,7 @@ func main() {
 	appRunAddress := os.Getenv("APP_RUN_ADDRESS")
 
 	if appRunAddress == "" {
-		appRunAddress = ":8080"
+		appRunAddress = "127.0.0.1:8080"
 	}
 
 	server.Run(appRunAddress)

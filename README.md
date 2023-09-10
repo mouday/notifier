@@ -17,9 +17,9 @@
 
 ```bash
 # == 应用配置 ==
-# 运行模式
+# 运行模式 debug test release (默认：release)
 GIN_MODE=release
-# 监听端口
+# 监听端口 (默认：127.0.0.1:8000）
 APP_RUN_ADDRESS=127.0.0.1:8000
 
 # == 邮件配置 ==
@@ -68,3 +68,6 @@ POST http://127.0.0.1:8001/sendEmail
 	"msg": "success"
 }
 ```
+
+参考文章
+- [使用 GOLANG 发送邮件](https://blog.csdn.net/m0_37322399/article/details/118558600)

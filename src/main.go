@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/mouday/notifier/src/dto"
@@ -9,6 +10,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/subosito/gotenv"
 )
+
+const VERSION = "v1.0.3"
 
 func init() {
 	gotenv.Load()
@@ -62,5 +65,7 @@ func main() {
 		appRunAddress = "127.0.0.1:8080"
 	}
 
+	fmt.Println("Notifier version: ", VERSION)
+	fmt.Println("run address: ", "http://"+appRunAddress)
 	server.Run(appRunAddress)
 }

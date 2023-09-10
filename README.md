@@ -2,20 +2,19 @@
 
 基于Golang的邮件通知服务
 
-用到的第三方库
-
-- https://github.com/cosmtrek/air
-- https://github.com/subosito/gotenv
-- https://github.com/jordan-wright/email
-- https://github.com/gin-gonic/gin
-
 ## 使用方式
 
 1、下载适合所在运行平台的二进制文件
 
 [https://github.com/mouday/notifier/releases](https://github.com/mouday/notifier/releases)
 
-2、配置邮件验证信息`.env`
+2、配置邮件验证信息
+
+```bash
+mv env.example .env
+```
+
+配置说明
 
 ```bash
 # == 应用配置 ==
@@ -71,5 +70,13 @@ POST http://127.0.0.1:8000/sendEmail
 }
 ```
 
+用到的第三方库
+
+- https://github.com/cosmtrek/air
+- https://github.com/subosito/gotenv
+- https://github.com/jordan-wright/email
+- https://github.com/gin-gonic/gin
+
 参考文章
+
 - [使用 GOLANG 发送邮件](https://blog.csdn.net/m0_37322399/article/details/118558600)

@@ -53,6 +53,7 @@ notifier.exe
 
 ```json
 POST http://127.0.0.1:8000/sendEmail
+content-type: application/json
 
 {
 	"to": ["123456@qq.com"],

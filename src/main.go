@@ -62,7 +62,7 @@ func main() {
 	appRunAddress := os.Getenv("APP_RUN_ADDRESS")
 
 	if appRunAddress == "" {
-		appRunAddress = "127.0.0.1:8080"
+		appRunAddress = "127.0.0.1:8000"
 	}
 
 	fmt.Println("Notifier version: ", VERSION)

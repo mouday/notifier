@@ -13,6 +13,8 @@
 
 1、下载适合所在运行平台的二进制文件
 
+[https://github.com/mouday/notifier/releases](https://github.com/mouday/notifier/releases)
+
 2、配置邮件验证信息`.env`
 
 ```bash
@@ -51,7 +53,7 @@ notifier.exe
 发送示例
 
 ```json
-POST http://127.0.0.1:8001/sendEmail
+POST http://127.0.0.1:8000/sendEmail
 
 {
 	"to": ["123456@qq.com"],

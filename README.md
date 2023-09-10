@@ -10,6 +10,7 @@
 - https://github.com/gin-gonic/gin
 
 ## 使用方式
+
 1、下载适合所在运行平台的二进制文件
 
 2、配置邮件验证信息`.env`
@@ -36,13 +37,13 @@ APP_EMAIL_PORT=25
 
 ```bash
 # macos: 
-./notifier-darwin
+./notifier
 
 # linux: 
-./notifier-linux
+./notifier
 
 # windows: 
-notifier-windows.exe
+notifier.exe
 ```
 
 4、调用api接口发送邮件

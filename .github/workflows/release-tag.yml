@@ -35,8 +35,8 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            ./build/*.gz
-            ./build/*.zip
+            ./release/*.gz
+            ./release/*.zip
           body: Please refer to CHANGELOG.md for details.
           # note you'll typically need to create a personal access token
           # with permissions to create releases in the other repo

@@ -71,6 +71,12 @@ content-type: application/json
 }
 ```
 
+curl命令
+
+```bash
+curl -H "Content-Type:application/json" -X POST -d '{"to": ["123456@qq.com"], "subject": "测试邮件标题", "body": "测试邮件内容"}'http://127.0.0.1:8000/sendEmail
+```
+
 用到的第三方库
 
 - https://github.com/cosmtrek/air
